@@ -25,7 +25,7 @@ public class AddWord extends HttpServlet {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://wizard71029.synology.me:3306/AAA?useSSL=false&serverTimezone=UTC&useFractionalSeconds=true", "EEIT24", "AAAbbb111222@");
+            conn = DriverManager.getConnection("jdbc:mysql://wizard71029.synology.me:3306/");
             stmt = conn.createStatement();
 
             int count = stmt.executeUpdate("insert into " + name + "(package,en,cn) values('" + nowPa + "','" + newEn + "','" + newCn + "')");
