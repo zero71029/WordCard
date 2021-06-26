@@ -49,8 +49,7 @@ public class wordDel extends HttpServlet {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			conn = DriverManager.getConnection(
-					"jdbc:mysql://wizard71029.synology.me:3306/AAA?useSSL=false&serverTimezone=UTC&useFractionalSeconds=true",
-					"EEIT24", "AAAbbb111222@");
+					"jdbc:mysql://wizard71029.synology.me:3306/AAA");
 			stmt = conn.createStatement();
 			sql = "DELETE FROM " + name + " WHERE package='" + nowPa + "' and en='" + wordDel+"'";
 			
