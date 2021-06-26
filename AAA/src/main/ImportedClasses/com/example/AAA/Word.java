@@ -15,7 +15,7 @@ public class Word {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://wizard71029.synology.me:3306/AAA?useSSL=false&serverTimezone=UTC&useFractionalSeconds=true", "EEIT24", "AAAbbb111222@");
+            conn = DriverManager.getConnection("jdbc:mysql://wizard71029.synology.me:3306/");
             stmt = conn.createStatement();
 
 
